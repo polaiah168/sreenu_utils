@@ -1,0 +1,392 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <title>admin page</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+      <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+      <link rel="stylesheet" href="../css/dataTable.css" />
+      <link rel="stylesheet" href="../css/styles.css" />
+      <script src="../js/dataTable.js"></script>
+      <script src="../js/script.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="navh">
+            <ul class="navbar-left">
+              <li class="home"><a  href="admin.html">Studio Contract</a></li>
+               <li class="tutorials"><a class="active" href="roleManagement.html">Role Management</a></li>
+               <li class="about"><a href="masterProperties.html">Master Properties</a></li>
+               <li class="news"><a href="propertyValues.html">Property Values</a></li>
+            </ul>
+            <ul class="navbar-right">
+               <li><img src="../images/profile_pic_placeholder.png"></li>
+               <li><a href="#">Admin</a></li>
+            </ul>
+         </div>
+      </header>
+      <div class="bs-example">
+      <ul class="nav nav-tabs">
+         <li class="active"><a data-toggle="tab" href="#viewRoles">View Roles</a></li>
+         <li><a data-toggle="tab" href="#createRole">Create Roles</a></li>
+      </ul>
+      <div class="tab-content outertabs">
+      <div id="viewRoles" class="tab-pane fade in active">
+         <br>
+         <div class="tableData">
+            <table id="viewRolesData" class="stripe" cellspacing="0" width="98%">
+               <thead>
+                  <tr>
+                     <th>ID</th>
+                     <th>Name</th>
+                     <th>Description</th>
+                     <th>Start date</th>
+                     <th>End Date</th>
+                     <th>Contract Type</th>
+                     <th>view</th>
+                     <th>delete</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td><i data-toggle="modal" data-target="#viewRoleModal"class="glyphicon glyphicon-list-alt"></i></td>
+                     <td><i class="glyphicon glyphicon-trash"></i></td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div id="createRole" class="tab-pane fade">
+		  
+         <div class="innertabFields">
+            <div class="innertab">
+               <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#roleContractDetails">Contracts Details</a></li>
+               </ul>
+               <div class="tab-content">
+                  <div id="roleContractDetails" class="tab-pane fade in active">
+                     <div class="col-sm-12">
+                        <table>
+                           <tr>
+                              <td class="labelNames"><span>Role Type</span></td>
+                              <td><label class="radio-inline">
+								  <input type="radio" name="optradio">CP
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="optradio">PM
+								</label></td>
+                             </tr> 
+                           <tr>
+                              <td class="labelNames"><span>First Name</span></td>
+                              <td><input type="text" class="form-control" placeholder="Enter first name"></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Last Name</span></td>
+                              <td>
+                                 <input type="text" class="form-control" placeholder="Enter last name"></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Contract Number</span></td>
+                              <td>
+                                 <input type="text" class="form-control" placeholder="Enter 10 digit number"></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Username</span></td>
+                              <td>
+                                 <input type="text" class="form-control" placeholder="Enter username">
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Password</span></td>
+                              <td>
+                                 <input type="password" class="form-control" placeholder="Min 8 characters"></td>
+                          </tr>
+                           <tr>
+                              <td class="labelNames"><span>Confirm Password</span></td>
+                              <td>
+                                 <input type="text" class="form-control" placeholder="Enter password again"></td>
+                        </tr>
+                        </table>
+                     </div>
+                     
+                  </div>
+               </div>
+               <div class="text-center">
+                  <button type="submit" class="createContractsButton"></button>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      </div>
+     </div>
+     </div>
+      <footer class="footer">
+         <div class="text-center">
+            <span class="footer-title">&copy; Apalya 2015</span>
+         </div>
+      </footer>
+      <!-- Modal -->
+      <div class="modal fade" id="viewRoleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog modalDialog">
+            <div class="content modal-content">
+               <div class="contentBody modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">View Contarct</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="innertabPopUp">
+                     <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#viewRoleDetails">Role Details</a></li>
+                        
+                     </ul>
+                     <div class="tab-content">
+                        <div id="viewRoleDetails" class="tab-pane fade in active">
+                           <div class="modalTabBody">
+                              <div class="col-sm-7">
+                                 <table>
+									   <tr>
+										  <td class="labelNames"><span>Role Type</span></td>
+										  <td><label class="radio-inline">
+											  <input type="radio" name="optradio">CP
+											</label>
+											<label class="radio-inline">
+											  <input type="radio" name="optradio">PM
+											</label></td>
+										 </tr> 
+									   <tr>
+										  <td class="labelNames"><span>Studio</span></td>
+										  <td><input type="text" class="form-control" placeholder="Studio name"></td>
+									   </tr>
+									   <tr>
+										  <td class="labelNames"><span>First Name</span></td>
+										  <td><input type="text" class="form-control" placeholder="Enter first name"></td>
+									   </tr>
+									   <tr>
+										  <td class="labelNames"><span>Last Name</span></td>
+										  <td>
+											 <input type="text" class="form-control" placeholder="Enter last name"></td>
+									   </tr>
+									   
+									   <tr>
+										  <td class="labelNames"><span>Username</span></td>
+										  <td>
+											 <input type="text" class="form-control" placeholder="Enter username">
+											 </td>
+									   </tr>
+									   <tr>
+										  <td class="labelNames"><span>Password</span></td>
+										  <td>
+											 <div class='input-group'><input type="password" class="form-control1" placeholder="Min 8 characters"><i class="glyphicon glyphicon-edit icons"></i></div></td>
+									  </tr>
+									   <tr>
+										  <td class="labelNames"><span>Contract Number</span></td>
+										  <td>
+											 <input type="text" class="form-control" placeholder="Enter 10 digit number"></td>
+									   </tr>
+									</table>
+                              </div>
+                              <div class="col-sm-5 rightsideContent">
+                                 <div>
+                                    <label class="col-sm-12" class="col-sm-12">Entry Id:</label>
+                                    <div class="imgdisplay">
+                                       <img  src="../images/hbo.jpg" width=240 height=160>
+                                    </div>
+                                    <label class="col-sm-12">&nbsp;</label>
+                                    <label class="col-sm-12">Creator:</label>
+                                    <label class="col-sm-12">Type:</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                       
+                     </div>
+                  </div>
+                  
+                  <div class="modal-footer">
+                     <button type="button" class="cancelButton" data-dismiss="modal"></button>
+                     <button type="button" class="cancelButton"></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /container -->
+   </body>
+</html>

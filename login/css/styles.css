@@ -1,0 +1,421 @@
+	/*tags css*/
+	
+	body {
+	    background-color: #3370a4;
+	}
+	input {
+	    border-radius: 7px;
+	}
+	a {
+	    font-size: 16px;
+	    font-family: Myriad Pro, Semibold;
+	    color: #fff;
+	    cursor:pointer;
+	}
+	.footer {
+	    position: absolute;
+	    bottom: 5px;
+	    width: 100%;
+	    height: 30px;
+	}
+	/*close tags css*/
+	/*open header*/
+	
+	.nav-tabs > li.active > a {
+	    color: #434343;
+	    font-family: Myriad Pro, semibold;
+	    font-size: 16px;
+	    font-weight: 700;
+	}
+	.innertab .nav-tabs > li.active > a {
+	    background-color: #ddd;
+	}
+	.innertabPopUp .nav-tabs > li.active > a {
+	    background-color: #ddd;
+	}
+	.navh {
+	    background-image: url("../images/header-bg.png");
+	    background-repeat: no-repeat;
+	    min-height: 56px;
+	}
+	.navh .navbar-left {
+	    list-style: outside none none;
+	    padding-left: 235px;
+	    margin: 0px;
+	    background-image: url("header-bg.png");
+	    background-repeat: no-repeat;
+	    min-height: 55px;
+	    
+	}
+	.navh .navbarright {
+	    padding-left: 2px;
+	    padding-right: 5px;
+	    display: inline-block;
+	    list-style: outside none none;
+	}
+	.navh .navbar-left li {
+	    font-size: 16px;
+	    font-family: Myriad Pro, Semibold;
+	    line-height: 40px;
+	    height: 40px;
+	    border-bottom: 1px solid #888;
+	}
+	.navh a {
+	    text-decoration: none;
+	    color: #434343;
+	    font-family: Myriad Pro, semibold;
+	    font-size: 16px;
+	    font-weight: 700;
+	}
+	.navh .navbar-left li:hover {
+	background-color: #F9F9F9;
+	color: rgb(68, 68, 68);
+	cursor: pointer;
+	
+	border-radius: 7px;
+	color: #fff;
+	font-size: 16px;
+	font-family: Myriad Pro,Semibold;}
+ 
+	
+	.navh a.active {
+	    background-color: #3370A4;
+	    color: rgb(68, 68, 68);
+	    cursor: default;
+	    padding: 5px;
+	    border-radius: 7px;
+	    color: #fff;
+	    font-size: 16px;
+	    font-family: Myriad Pro, Semibold;
+	}
+	@media screen and (min-width: 600px) {
+	    .navh .navbar-left li {
+	        padding-right: 16px;
+	        border-bottom: none;
+	        height: 50px;
+	        line-height: 50px;
+	        font-size: 1.4em;
+	        padding-left: 16px;
+	    }
+	    .navh .navbarright li {
+	        padding-right: 15px;
+	    }
+	    /* Option 1 - Display Inline */
+	    
+	    .navh .navbar-left li {
+	        display: inline-block;
+	    }
+	    .line{
+			margin-top: -52px;
+margin-left: 93px;
+list-style: outside none none;
+	    }
+	    .logout{
+			color:red;
+	    }
+	    /*close
+	     *  header*/
+	    /*open pages css*/
+	    
+	    .bs-example {
+	        margin: 30px;
+	        margin-bottom: 5px;
+	    }
+	    .bs-example .tab-content {
+	        border-right: 2px solid #fff;
+	        border-bottom: 2px solid #fff;
+	        border-left: 2px solid #fff;
+	        background-color: #fff;
+	        margin-bottom: 7px;
+	    }
+	    .outertabs {
+	        min-height: 490px;
+	    }
+	    .innertab {
+	        min-height: 350px;
+	        padding: 10px 10px 0px 10px;
+	    }
+	    .innertab .nav-tabs {
+	        background-color: #989898;
+	    }
+	    .innertab .tab-content {
+	        background-color: #DDD;
+	        height: 360px;
+	    }
+	    .innertab .nav {
+	        padding-left: 20px;
+	        padding-top: 11px;
+	    }
+	    .innertab .nav-tabs > li.active > a {
+	        padding: 5px 15px;
+	    }
+	    .nav-tabs > li> a {
+	        padding: 5px 15px;
+	    }
+	    .tableData {
+	        height: 440px;
+	    }
+	    .innertabFields {
+	        height: 465px;
+	    }
+	    .dataTables_wrapper {
+	        height: 430px;
+	    }
+	    .dataTables_wrapper .dataTables_paginate {
+	        text-align: center;
+	        float: none;
+	    }
+	    .footer-title {
+	        color: #fff;
+	        font-size: 14px;
+	        font-family: Myriad Pro;
+	    }
+	    .stripe td {
+	        border-right: 1px solid #222;
+	    }
+	    .stripe th {
+	        border-right: 1px solid #222;
+	    }
+	    .stripe tbody tr {
+	        height: 60px;
+	    }
+	    th {
+	        font-family: Arial, Bold;
+	        font-size: 14px;
+	        color: #3A3A43;
+	    }
+	    td {
+	        font-family: Arial;
+	        font-size: 14px;
+	        color: #3A3A43;
+	    }
+	    .dataTables_wrapper .dataTables_filter {
+	        position: absolute;
+	        margin-top: -56px;
+	        margin-left: 910px;
+	    }
+	    .dataTables_wrapper .dataTables_scroll {
+	        height: 400px;
+	    }
+	    /* side tables data*/
+	    
+	    .side,
+	    .side1 {
+	        height: 350px;
+	        padding-left: 125px;
+	        padding-top: 15px;
+	    }
+	    .side1 {
+	        padding-left: 95px;
+	    }
+	    .side table {
+	        height: 336px;
+	        width: 80%;
+	    }
+	    .side1 table {
+	        height: 285px;
+	    }
+	    .side1 table {
+	        width: 87%;
+	    }
+	    .side1 {
+	        border-left: 1px solid #222;
+	    }
+	    .side .labelNames {
+	        width: 136px;
+	    }
+	    .side1 .labelNames {
+	        width: 195px;
+	    }
+	    .side input,
+	    .side textarea,
+	    .side select,
+	    .side1 input {
+	        border-radius: 7px;
+	    }
+	    .form-control1 {
+	        width: 86%;
+	        height: 34px;
+	        padding: 6px 12px;
+	        font-size: 14px;
+	        line-height: 1.42857;
+	        color: #555;
+	        background-color: #FFF;
+	        background-image: none;
+	        border: 1px solid #CCC;
+	        border-radius: 4px;
+	        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+	        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	    }
+	    .icons {
+	        margin-left: 10px;
+	        font-size: 21px;
+	        top: 5px;
+	        cursor:pointer;
+	    }
+	    .createContractsButton {
+	        background-image: url("../images/create_btn_default.png");
+	        background-repeat: no-repeat;
+	        width: 180px;
+	        height: 45px;
+	        border-color: 0px;
+	        cursor: pointer;
+	        background-color: #fff;
+	        border: 0px;
+	    }
+	    /*close pages css*/
+	    /*popup css */
+	    
+	    .cancelButton {
+	        background-image: url("../images/cancel_btn_default.png");
+	        background-repeat: no-repeat;
+	        width: 180px;
+	        height: 45px;
+	        border-color: 0px;
+	        cursor: pointer;
+	        background-color: #fff;
+	        border: 0px;
+	    }
+	    .modalDialog {
+	        width: 720px;
+	    }
+	    .modalDialog .modal-body {
+	        padding: 0px;
+	    }
+	    .innertabPopUp {
+	        min-height: 250px;
+	    }
+	    .innertabPopUp .nav-tabs {
+	        background-color: #989898;
+	    }
+	    .innertabPopUp .tab-content {
+	        background-color: #DDD;
+	        height: 325px;
+	    }
+	    .innertabPopUp .nav {
+	        padding-left: 20px;
+	        padding-top: 11px;
+	    }
+	    .innertabPopUp .nav-tabs > li.active > a {
+	        padding: 5px 15px;
+	    }
+	    .contentBody {
+	        padding-left: 10px;
+	        padding-top: 10px;
+	        border-bottom: none;
+	    }
+	    .content {
+	        background-color: #3370A4;
+	    }
+	    .modal-title {
+	        color: #fff;
+	        font-family: Arial;
+	        font-size: 16px;
+	        font-weight: 700;
+	    }
+	    .modal-footer {
+	        text-align: center;
+	        border-top: 1px solid #222;
+	        background-color: #fff;
+	        border-bottom-left-radius: 6px;
+	        border-bottom-right-radius: 6px;
+	        padding: 10px;
+	    }
+	    .innertabPopUp .rightsideContent {
+	        border-left: 1px solid #222;
+	    }
+	    .modalTabBody {
+	        width: 720px;
+	        height: 320px;
+	        padding-top: 20px;
+	    }
+	    .modalTabBody td input {
+	        border-radius: 7px;
+	    }
+	    .modalTabBody table {
+	        height: 220px;
+	        width: 100%;
+	    }
+	    .imgdisplay {
+	        padding-left: 18px;
+	    }
+	    /*role management css*/
+	    
+	    #roleContractDetails table {
+	        width: 400px;
+	        height: 325px;
+	        margin-top: 10px;
+	        margin-left: 30%;
+	    }
+	    #roleContractDetails input {
+	        border-radius: 7px;
+	    }
+	    #viewRoleDetails .modalTabBody table {
+	        height: 287px;
+	        width: 100%;
+	    }
+	    /*master properties css*/
+	    
+	    #createMasterProperty .side table {
+	        height: 235px;
+	    }
+	    .groupCheckbox {
+	        border: 1px solid #FFF;
+	        background-color: #FFF;
+	        border-radius: 7px;
+	        width: 50%;
+	    }
+	    /*property values css*/
+	    
+	    #assignProperty table {
+	        margin-left: 30%;
+	        margin-top: 20px;
+	        height: 153px;
+	        width: 375px;
+	    }
+        /*scroll bar css*/
+        ::-webkit-scrollbar {
+				width: 8px;
+			}
+			::-webkit-scrollbar-button {
+				width: 8px;
+				height:5px;
+			}
+			::-webkit-scrollbar-track {
+				background:#eee;
+				border: thin solid lightgray;
+				box-shadow: 0px 0px 3px #dfdfdf inset;
+				border-radius:10px;
+			}
+			::-webkit-scrollbar-thumb {
+				background:#999;
+				border: thin solid gray;
+				border-radius:10px;
+			}
+			::-webkit-scrollbar-thumb:hover {
+				background:#7d7d7d;
+			}
+			/*firefox scroll bar css*/	
+			-moz-scrollbar {
+				width: 8px;
+			}
+			-moz-scrollbar-button {
+				width: 8px;
+				height:5px;
+			}
+			-moz-scrollbar-track {
+				background:#eee;
+				border: thin solid lightgray;
+				box-shadow: 0px 0px 3px #dfdfdf inset;
+				border-radius:10px;
+			}
+			-moz-thumb {
+				background:#999;
+				border: thin solid gray;
+				border-radius:10px;
+			}
+			-moz-scrollbar-thumb:hover {
+				background:#7d7d7d;
+			}	
+						
+

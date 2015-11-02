@@ -1,0 +1,439 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <title>admin page</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+      <link rel="stylesheet" href="../css/dataTable.css" />
+      <link rel="stylesheet" href="../css/styles.css" />
+      <script src="../js/dataTable.js"></script>
+      <script src="../js/script.js"></script>
+      
+   </head>
+   <body>
+      <header>
+         <div class="navh">
+            <ul class="navbar-left col-sm-10">
+               <li class="home"><a class="active" href="admin.html">Studio Contract</a></li>
+               <li class="tutorials"><a  href="roleManagement.html">Role Management</a></li>
+               <li class="about"><a href="masterProperties.html">Master Properties</a></li>
+               <li class="news"><a href="propertyValues.html">Property Values</a></li>
+            </ul>
+            <ul class="navbarright col-sm-2">
+               <li><img src="../images/profile_pic_placeholder.png"></li>
+               <li>
+				   <ul class="line"><li><span>Admin </span><li><a href="#"><span class="logout">Logout</span></a></span></li></ul>
+				 </li>  
+            </ul>
+         </div>
+      </header>
+      <div class="bs-example">
+      <ul class="nav nav-tabs">
+         <li class="active"><a data-toggle="tab" href="#newUser">View Contracts</a></li>
+         <li><a data-toggle="tab" href="#existingUser">Create Content</a></li>
+      </ul>
+      <div class="tab-content outertabs">
+      <div id="newUser" class="tab-pane fade in active">
+         <br>
+         <div class="tableData">
+            <table id="example" class="stripe" cellspacing="0" width="98%">
+               <thead>
+                  <tr>
+                     <th>ID</th>
+                     <th style="width:50px;">Thumbs</th>
+                     <th>Name</th>
+                     <th>Description</th>
+                     <th>Start date</th>
+                     <th>End Date</th>
+                     <th>Contract Type</th>
+                     <th>view</th>
+                     <th>delete</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>01</td>
+                     <td><img src="../images/hbo.jpg" width="60" height=45></td>
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td><i data-toggle="modal" data-target="#myModal"class="glyphicon glyphicon-list-alt"></i></td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     <td><img src="../images/zee.jpg" width="60" height=45></td>
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     <td><img src="../images/hbo.jpg" width="60" height=45></td>
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     <td><img src="../images/zee.jpg" width="60" height=45></td>
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     <td><img src="../images/hbo.jpg" width="60" height=45></td>
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     <td><img src="../images/zee.jpg" width="60" height=45></td>
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     <td><img src="../images/hbo.jpg" width="60" height=45></td>
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     <td><img src="../images/zee.jpg" width="60" height=45></td>
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     <td><img src="../images/hbo.jpg" width="60" height=45></td>
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     <td><img src="../images/zee.jpg" width="60" height=45></td>
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     <td><img src="../images/hbo.jpg" width="60" height=45></td>
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     <td><img src="../images/zee.jpg" width="60" height=45></td>
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     <td><img src="../images/hbo.jpg" width="60" height=45></td>
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     <td><img src="../images/zee.jpg" width="60" height=45></td>
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     <td><img src="../images/hbo.jpg" width="60" height=45></td>
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     <td><img src="../images/zee.jpg" width="60" height=45></td>
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div id="existingUser" class="tab-pane fade">
+		  
+         <div class="innertabFields">
+            <div class="innertab">
+               <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#contractDetails">Contracts Details</a></li>
+               </ul>
+               <div class="tab-content">
+                  <div id="contractDetails" class="tab-pane fade in active">
+                     <div class="col-sm-6 side">
+                        <table>
+                           <tr>
+                              <td class="labelNames"><span>Contract Name</span></td>
+                              <td><input type="text" class="form-control"></td>
+                             </tr> 
+                           <tr>
+                              <td class="labelNames"><span>Description</span></td>
+                              <td><textarea rows=1 placeholder="max 400 characters" class="form-control"></textarea></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Start Date</span></td>
+                              <td>
+                                 <div class='input-group date' id='datetimepicker1'><input type="date" placeholder="dd/mm/yy" class="form-control1"><span class="fa fa-calendar icons"></span></div></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>End Date</span></td>
+                              <td>
+                                 <div class='input-group date' id='datetimepicker2'><input type="date" placeholder="dd/mm/yy" class="form-control1"><i class="fa fa-calendar icons"></i></div></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Contract Type</span></td>
+                              <td>
+                                 <select class="form-control">
+                                    <option>Both
+                                    <option>system
+                                    <option>user
+                                 </select>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Upload Image</span></td>
+                              <td>
+                                 <div class='input-group'><input type="text" placeholder="Paste url or browse" class="form-control1"><i class="glyphicon glyphicon-folder-open icons"></i></div></td>
+                          </tr>
+                           <tr>
+                              <td class="labelNames"><span>Upload Contract</span></td>
+                              <td>
+                                 <div class='input-group'><input type="text" placeholder="Paste url or browse" class="form-control1"><i class="glyphicon glyphicon-folder-open icons"></i></div></td>
+                        </tr>
+                        </table>
+                     </div>
+                     <div class="col-sm-6 side1">
+                        <table>
+                           <tr>
+                              <td class="labelNames"><span>Primary Contract Name</span></td>
+                              <td ><input type="text" placeholder="Enter full name" class="form-control"></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Primary Contract Email</span></td>
+                              <td><input type="email" placeholder="Enter email ID" class="form-control"></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Primary Contract Phono</span></td>
+                              <td><input type="text" class="form-control" placeholder="Enter ten digit number"> </td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Secondary Contract Name</span></td>
+                              <td><input type="text" class="form-control" placeholder="Enter full name"></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Secondary Contract Email</span></td>
+                              <td><input type="email" class="form-control" placeholder="Enter email ID"></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Secondary Contract Phono</span></td>
+                              <td><input type="text" class="form-control" placeholder="Enter ten digit number"> </td>
+                             </tr> 
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="text-center">
+                  <button type="submit" class="createContractsButton"></button>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      </div>
+     </div>
+     </div>
+      <footer class="footer">
+         <div class="text-center">
+            <span class="footer-title">&copy; Apalya 2015</span>
+         </div>
+      </footer>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog modalDialog">
+            <div class="content modal-content">
+               <div class="contentBody modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">View Contarct</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="innertabPopUp">
+                     <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#viewContract">Contract</a></li>
+                        <li><a data-toggle="tab" href="#viewContractDetails">Contracts Details</a></li>
+                     </ul>
+                     <div class="tab-content">
+                        <div id="viewContract" class="tab-pane fade in active">
+                           <div class="modalTabBody">
+                              <div class="col-sm-6">
+                                 <table>
+                                    <tr>
+                                       <td class="labelNames"><label>Contract Name</label></td>
+                                       <td><input type="text" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>Description</label></td>
+                                       <td><textarea rows=1 placeholder="max 400 characters" class="form-control"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>Start Date</label></td>
+                                       <td><input type="date" placeholder="dd/mm/yy" class="form-control1"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>End Date</label></td>
+                                       <td><input type="date" placeholder="dd/mm/yy" class="form-control1"></td>
+                                      </tr> 
+                                 </table>
+                              </div>
+                              <div class="col-sm-6 rightsideContent">
+                                 <div>
+                                    <label class="col-sm-12" class="col-sm-12">Entry Id:</label>
+                                    <div class="imgdisplay">
+                                       <img  src="../images/hbo.jpg" width=240 height=160>
+                                    </div>
+                                    <label class="col-sm-12">&nbsp;</label>
+                                    <label class="col-sm-12">Creator:</label>
+                                    <label class="col-sm-12">Type:</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                     <button type="button" class="cancelButton" data-dismiss="modal"></button>
+                     <button type="button" class="cancelButton"></button>
+                  </div>
+                        </div>
+                        <div id="viewContractDetails" class="tab-pane fade">
+                           <div class="modalTabBody">
+                              <div class="col-sm-6">
+                                 <table>
+                                    <tr>
+                                       <td class="labelNames"><label>Contract Name</label></td>
+                                       <td><input type="text" class="form-control"></td>
+                                      </tr> 
+                                    <tr>
+                                       <td class="labelNames"><label>Description</label></td>
+                                       <td><textarea rows=1 placeholder="max 400 characters" class="form-control"></textarea></td>
+                                       </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>Start Date</label></td>
+                                       <td><input type="date" placeholder="dd/mm/yy" class="form-control1"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>End Date</label></td>
+                                       <td><input type="date" placeholder="dd/mm/yy" class="form-control1"></td>
+                                      </tr> 
+                                 </table>
+                              </div>
+                              <div class="col-sm-6 rightsideContent">
+                                 <div>
+                                    <label class="col-sm-12" class="col-sm-12">Entry Id:</label>
+                                    <div class="imgdisplay">
+                                       <img  src="../images/hbo.jpg" width=240 height=160>
+                                    </div>
+                                    <label class="col-sm-12">&nbsp;</label>
+                                    <label class="col-sm-12">Creator:</label>
+                                    <label class="col-sm-12">Type:</label>
+                                 </div>
+                              </div>
+                           </div>
+						<div class="modal-footer">
+                     <button type="button" class="cancelButton" data-dismiss="modal"></button>
+                     <button type="button" class="cancelButton"></button>
+                  </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /container -->
+   </body>
+</html>

@@ -1,0 +1,86 @@
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    
+    <title>cms sign in page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../css/login.css" />
+    </head>
+    <body>
+
+        <!-- header -->
+        <div id="top-nav" ng-controller="headController" role="navigation" class="navbar navbar-default navbar-static-top" >
+            <div class="container-fluied">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar_header navbar-brand"><img src="../images/header_logo.png"></img></a>
+            </div>
+           
+            </div>
+            <!-- /container -->
+            </div>
+
+            <div class="login">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Login</div>
+            <div class="body panel-body">
+                <table>
+                <tr><td><span>Username</span>   
+                    <td><input type=text class="form-control" placeholder="Enter Username">
+                <tr><td><span>Password</span>   
+                    <td><input type=password class="form-control" placeholder="Enter Password">
+               
+                </table>   
+            </div>
+            <footer>
+               <div>
+                <table>
+                    <tr><td><a data-toggle="modal" data-target="#forgetPasswordModal">Forget Password?</a>
+                    <td class="right"><button type="submit" class="button"></button>
+                </table>
+                </div>
+            </footer> 
+			<div class="footer text-center">
+				<span class="footer-title">&copy; Apalya 2015</span>
+			</div>		
+            </div>
+            </div>
+     <div class="modal fade" id="forgetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
+       <div class="modal-dialog">
+    <div class="content modal-content">
+      <div class="modal-header">
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+        <p class="modal-title">Forget Password</p>
+      </div>
+   <form role="form" method="post" action="/admin/deleteContract">
+      <div class="modal-body">
+        <p><label>Please Enter your email ID to get Your Password</label></p>
+		<div class="text">
+		<input type="text" class="form-control" placeholder="Enter email ID">
+		</div>
+		<div class="modal-footer">
+        <button type="submit" class="submitbutton" ></button>
+        <button type="button" class="closebutton" data-dismiss="modal"></button>
+      </div>
+      </div>
+      
+   </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+       
+    </body>
+
+</html>

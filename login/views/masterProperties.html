@@ -1,0 +1,429 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <title>admin page</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+      <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+      <link rel="stylesheet" href="../css/dataTable.css" />
+      <link rel="stylesheet" href="../css/styles.css" />
+      <script src="../js/dataTable.js"></script>
+      <script src="../js/script.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="navh">
+            <ul class="navbar-left">
+               <li class="home"><a  href="admin.html">Studio Contract</a></li>
+               <li class="tutorials"><a  href="roleManagement.html">Role Management</a></li>
+               <li class="about"><a class="active" href="masterProperties.html">Master Properties</a></li>
+               <li class="news"><a href="propertyValues.html">Property Values</a></li>
+            </ul>
+            <ul class="navbar-right">
+               <li><img src="../images/profile_pic_placeholder.png"></li>
+               <li><a href="#">Admin</a></li>
+            </ul>
+         </div>
+      </header>
+      <div class="bs-example">
+      <ul class="nav nav-tabs">
+         <li class="active"><a data-toggle="tab" href="#viewMasterProperties">View Master Properties</a></li>
+         <li><a data-toggle="tab" href="#createMasterProperty">Create Master Property</a></li>
+      </ul>
+      <div class="tab-content outertabs">
+      <div id="viewMasterProperties" class="tab-pane fade in active">
+         <br>
+         <div class="tableData">
+            <table id="viewMasterPropertiesTableData" class="stripe" cellspacing="0" width="98%">
+               <thead>
+                  <tr>
+                     <th>ID</th>
+                     <th>Name</th>
+                     <th>Description</th>
+                     <th>Start date</th>
+                     <th>End Date</th>
+                     <th>Contract Type</th>
+                     <th>view</th>
+                     <th>delete</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td><i data-toggle="modal" data-target="#viewRoleModal"class="glyphicon glyphicon-list-alt"></i></td>
+                     <td><i class="glyphicon glyphicon-trash"></i></td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>01</td>
+                     
+                     <td>HBO</td>
+                     <td>HBO Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+                  <tr>
+                     <td>02</td>
+                     
+                     <td>ZEE</td>
+                     <td>ZEE Movies</td>
+                     <td>2011/04/25</td>
+                     <td>2011/04/25</td>
+                     <td>SVOD</td>
+                     <td>view</td>
+                     <td>delete</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div id="createMasterProperty" class="tab-pane fade">
+		  
+         <div class="innertabFields">
+            <div class="innertab">
+               <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#property">Property</a></li>
+               </ul>
+               <div class="tab-content">
+                  <div id="property" class="tab-pane fade in active">
+                     <div class="col-sm-6 side">
+                        <table>
+                           <tr>
+                              <td class="labelNames"><span>Property Type</span></td>
+                              <td><select class="form-control">
+                                    <option>Both
+                                    <option>system
+                                    <option>user
+                                 </select>
+                                 </td>
+                             </tr> 
+                           <tr>
+                              <td class="labelNames"><span>Property Name</span></td>
+                              <td><input type="text" class="form-control"></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Configured By</span></td>
+                              <td>
+                                 <select class="form-control">
+                                    <option>Both
+                                    <option>system
+                                    <option>user
+                                 </select>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Category Type</span></td>
+                              <td>
+                                 <select class="form-control">
+                                    <option>Both
+                                    <option>system
+                                    <option>user
+                                 </select></td>
+                           </tr>
+                           <tr>
+                              <td class="labelNames"><span>Multi Value</span></td>
+                              <td>
+                                 <label class="radio-inline">
+											  <input type="radio" name="optradio">Yes
+											</label>
+											<label class="radio-inline">
+											  <input type="radio" name="optradio">No
+											</label>
+                                 </td>
+                           </tr>
+                           
+                        </table>
+                     </div>
+                     <div class="col-sm-6 side1">
+					  <div class="col-sm-4">
+						  <label>Entity Type</label>
+					  </div>	  	 
+					  <div class="col-sm-8 groupCheckbox">	 
+                        <div class="checkbox">
+						  <label><input type="checkbox" value="">Option 1</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="">Option 2</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="" >Option 3</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="" >Option 3</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="" >Option 3</label>
+						</div>
+					  </div>	
+                     </div>
+                  </div>
+               </div>
+               <div class="text-center">
+                  <button type="submit" class="createContractsButton"></button>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      </div>
+     </div>
+     </div>
+      <footer class="footer">
+         <div class="text-center">
+            <span class="footer-title">&copy; Apalya 2015</span>
+         </div>
+      </footer>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog modalDialog">
+            <div class="content modal-content">
+               <div class="contentBody modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">View Contarct</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="innertabPopUp">
+                     <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#viewContract">Contract</a></li>
+                        <li><a data-toggle="tab" href="#viewContractDetails">Contracts Details</a></li>
+                     </ul>
+                     <div class="tab-content">
+                        <div id="viewContract" class="tab-pane fade in active">
+                           <div class="modalTabBody">
+                              <div class="col-sm-6">
+                                 <table>
+                                    <tr>
+                                       <td class="labelNames"><label>Contract Name</label></td>
+                                       <td><input type="text" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>Description</label></td>
+                                       <td><textarea rows=1 placeholder="max 400 characters" class="form-control"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>Start Date</label></td>
+                                       <td><input type="date" placeholder="dd/mm/yy" class="form-control1"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>End Date</label></td>
+                                       <td><input type="date" placeholder="dd/mm/yy" class="form-control1"></td>
+                                      </tr> 
+                                 </table>
+                              </div>
+                              <div class="col-sm-6 rightsideContent">
+                                 <div>
+                                    <label class="col-sm-12" class="col-sm-12">Entry Id:</label>
+                                    <div class="imgdisplay">
+                                       <img  src="../images/hbo.jpg" width=240 height=160>
+                                    </div>
+                                    <label class="col-sm-12">&nbsp;</label>
+                                    <label class="col-sm-12">Creator:</label>
+                                    <label class="col-sm-12">Type:</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="viewContractDetails" class="tab-pane fade">
+                           <div class="modalTabBody">
+                              <div class="col-sm-6">
+                                 <table>
+                                    <tr>
+                                       <td class="labelNames"><label>Contract Name</label></td>
+                                       <td><input type="text" class="form-control"></td>
+                                      </tr> 
+                                    <tr>
+                                       <td class="labelNames"><label>Description</label></td>
+                                       <td><textarea rows=1 placeholder="max 400 characters" class="form-control"></textarea></td>
+                                       </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>Start Date</label></td>
+                                       <td><input type="date" placeholder="dd/mm/yy" class="form-control1"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="labelNames"><label>End Date</label></td>
+                                       <td><input type="date" placeholder="dd/mm/yy" class="form-control1"></td>
+                                      </tr> 
+                                 </table>
+                              </div>
+                              <div class="col-sm-6 rightsideContent">
+                                 <div>
+                                    <label class="col-sm-12" class="col-sm-12">Entry Id:</label>
+                                    <div class="imgdisplay">
+                                       <img  src="../images/hbo.jpg" width=240 height=160>
+                                    </div>
+                                    <label class="col-sm-12">&nbsp;</label>
+                                    <label class="col-sm-12">Creator:</label>
+                                    <label class="col-sm-12">Type:</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="modal-footer">
+                     <button type="button" class="cancelButton" data-dismiss="modal"></button>
+                     <button type="button" class="cancelButton"></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /container -->
+   </body>
+</html>
